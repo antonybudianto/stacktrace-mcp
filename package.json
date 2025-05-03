@@ -1,0 +1,26 @@
+{
+  "name": "stacktrace-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server Stacktrace",
+  "main": "mcp_server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/mcp_server.ts --minify",
+    "dev": "node --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"ts-node/esm\", pathToFileURL(\"./\"));' src/mcp_server.ts",
+    "start": "node dist/mcp_server.cjs",
+    "dev2": "npx @modelcontextprotocol/inspector node dist/mcp_server.cjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "ts-node": "^10.9.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.13",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "tsup": {
+    "target": "node20"
+  }
+}

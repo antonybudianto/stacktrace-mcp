@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "strict": true,
+      "module": "ESNext", // ES2020
+      "target": "ES2020",
+      "moduleResolution": "Node",
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true
+    },
+    "ts-node": {
+      "experimentalSpecifierResolution": "node",
+      "transpileOnly": true,
+      "esm": true,
+    }
+}
