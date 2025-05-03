@@ -1,5 +1,10 @@
 # stacktrace-mcp
 
+Simple JS Stacktrace MCP for getting the nearest error location from JavaScript bundle URL 
+and lets an LLM checks if it matches anything in the current codebase.
+
+> Designed for non-sourcemap users.
+
 ## Getting started
 
 1. Clone the repo
