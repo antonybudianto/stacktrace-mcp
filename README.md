@@ -1,5 +1,3 @@
-[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/antonybudianto-stacktrace-mcp-badge.png)](https://mseep.ai/app/antonybudianto-stacktrace-mcp)
-
 # stacktrace-mcp
 
 Simple JS Stacktrace MCP for getting the nearest error location from JavaScript bundle URL 
